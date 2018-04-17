@@ -1,0 +1,225 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/commom.css">
+    <link rel="stylesheet" type="text/css" href="./css/animation.css">
+	<link rel="stylesheet" type="text/css" href="./css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="./css/mine.css">
+	<style type="text/css">
+	     #music{
+	     	position: absolute;
+	     	background-image:url(./img/music_icon.png);
+		    top: 20rem;
+		    height: 3.5rem;
+		    width: 3.5rem;
+		    z-index: 100000;
+		    background-size: contain;
+		    right: 0;
+	     }
+	</style>
+</head>
+
+<body>
+	<div id="music"></div>
+	<audio id='page-music' src='./music/page.mp3' loop='loop'></audio>
+	<audio id='number-music' autoplay='autoplay'></audio>
+	<div id='boot'>
+  	 <a href='javascript:;'id='download' ></a>
+  	 <div id='startGame'></div>
+	</div>
+	<div class="share-cover">
+      <img src="img/cover.png"  alt="">
+    </div>
+
+	<div id='page'style="display: none;">
+		
+		<div class='dro'> 
+			<img src="./img/red.png"> 
+			<img src="./img/ds.png"> 
+			<img src="./img/bomb.png">
+			<img src="./img/durian.png">
+			<img src="./img/cold.png">
+		</div>
+		<div id='theme'></div>
+		<div class='list'></div>
+		<div class='packet'></div>
+		<div class='portrait'>
+			<ul class='ff '>
+			 		<li class="dd"></li>
+			 		<li class="portrait-icon ">登录</li>
+			 </ul>
+		</div>
+		<div>
+			<div class='guide'></div>
+			<div class='start'></div>
+		</div>
+		<div class="dog1"> </div>
+		<div id='rule'>游戏规则 ></div>
+	</div>
+	<!--引导页-->
+		<div class="posfix" id="guideView" style="display: none;">
+			<div class="w100_ h100_">
+				<div class="w100_ h100_ pd54_auto center-box">
+					<div class="main-view">
+					    <div class="swiper-container">
+					        <div class="swiper-wrapper">
+						        <div class="swiper-slide" style="background-image: url('./img/slide/slide1.png');"></div>
+						        <div class="swiper-slide" style="background-image: url('./img/slide/slide2.png');"></div>
+						        <div class="swiper-slide" style="background-image: url('./img/slide/slide3.png');"></div>
+						        <div class="swiper-slide" style="background-image: url('./img/slide/slide4.png');"></div>
+					        </div>
+					        <div class="swiper-pagination"></div>
+					    </div>
+					    <div class="close_guide"  id="closeGuide">
+					    	<!--关闭按钮-->
+					    </div>
+			  		</div>
+				</div>
+			</div>
+		</div>
+	<div id='center'  style="display: none;">
+		<div class='down'>
+    		<img  id='img' src='./img/a2.png'>
+		</div>	
+		<div id='prize'>
+			
+		</div>
+		<div>
+			 <div>
+				<div id='dog'>
+					<!-- 加分 -->
+					<img class='plus2' src="./img/+2.png">
+					<img class='plus3' src="./img/+3.png">
+					<img class='plus4' src="./img/+4.png">
+					<img class='plus5' src="./img/+5.png">
+					<img class='plus8' src="./img/+8.png">
+					<img class='plus10' src="./img/+10.png">
+					<img class='plus15' src="./img/+15.png">
+					<img class='plus20' src="./img/+20.png">
+					<img class='plus25' src="./img/+25.png">
+					<img class='plus30' src="./img/+30.png">
+					<img class='plus40' src="./img/+40.png">
+					<img class='plus50' src="./img/+50.png">
+					<img class='plus100' src="./img/+100.png">
+					<!-- 减分 -->
+					<img class='reduce3' src="./img/-3.png">
+					<img class='reduce4' src="./img/-4.png">
+					<img class='reduce5' src="./img/-5.png">
+					<img class='reduce8' src="./img/-8.png">
+					<img class='reduce10' src="./img/-10.png">
+					<img class='reduce20' src="./img/-20.png">
+					<img class='reduce30' src="./img/-30.png">
+					<img class='reduce40' src="./img/-40.png">
+					<img class='reduce50' src="./img/-50.png">
+					<img class='reduce100' src="./img/-100.png">
+				</div>
+				<div id='left'></div>
+				<div id='left_a'></div>
+				<!-- <button id='left'></button>
+				<button id='right'></button> -->
+				
+				<div id='right'></div>
+				<div id='right_a'></div>
+			 </div>
+			 	<ul class='ff'>
+			 		<li class="dd"></li>
+			 		<li class="portrait-icon">未登录</li>
+			 	</ul>
+
+			
+		</div>
+		
+	</div>
+			<div class='layer1'>
+					<div class='upgrade'></div>
+				<div class='cb'>
+				    <img class='bc' src="./img/bc1.png">
+				</div>
+			</div>
+
+			<div class='layer2'>
+					<div class='upgrade'></div>
+				<div class='cb'>
+				    <img class='bc' src="./img/bc2.png">
+				</div>
+			</div>
+			<div class='layer3'>
+					<div class='upgrade'></div>
+				<div class='cb'>
+				    <img class='bc' src="./img/bc3.png">
+				</div>
+			</div>
+			<div class='layer4'>
+					<div class='upgrade'></div>
+				<div class='cb'>
+				    <img class='bc' src="./img/bc4.png">
+				</div>
+			</div>
+			<div class='layer5'>
+					<div class='upgrade'></div>
+				<div class='cb'>
+				    <img class='bc' src="./img/bc5.png">
+				</div>
+			</div>
+			<div class='layer6'>
+					<div class='upgrade'></div>
+				<div class='cb'>
+				    <img class='bc' src="./img/bc6.png">
+				</div>
+			</div>
+			<div class='layer7'>
+					<div class='upgrade'></div>
+				<div class='cb'>
+				    <img class='bc' src="./img/bc7.png">
+				</div>
+			</div>
+			<div class='layer8'>
+					<div class='upgrade'></div>
+				<div class='cb'>
+				    <img class='bc' src="./img/bc8.png">
+				</div>
+			</div>
+			<div class='layer9'>
+					<div class='upgrade'></div>
+				<div class='ccb'>
+				    <img class='bc' src="./img/bc9.png">
+				</div>
+			</div>
+			
+</body>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src='./js/animation.js'></script>
+
+
+<script type="text/javascript">
+$('#startGame').on('click',function(){
+	$('#page').show();
+});
+
+$('#music').on('click',function(){
+	var state = $('#page-music')[0].paused;
+	if(state){
+		$('#page-music').attr('src','./music/page.mp3');
+        $('#page-music')[0].play();
+	}else{
+		$('#page-music')[0].pause();
+	}
+})
+
+
+	
+	
+  </script>
+
+
+</html>

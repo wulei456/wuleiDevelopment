@@ -1,0 +1,268 @@
+
+.center-box{
+	 display: -webkit-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+
+
+}
+.center-end{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.center-start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.roww{
+    display: flex;
+    flex-direction: colum;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.column{
+  flex-direction: column;
+}
+.center-around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.between{
+	
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-pack: space-between;
+   -ms-flex-pack: space-between;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+}
+.center-b-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center-v{
+  display: inline-flex;
+  align-items: center;
+}
+
+.di{
+  display: inline-block;
+}
+.dif{
+  display: inline-flex;
+}
+.df{
+  display: flex;
+}
+.w100_{
+  width: 100%;
+}
+.w80_{
+  width: 80%;
+}
+.dis_b{
+  display: block;
+}
+
+
+
+
+.f46{
+	font-size: 2.3rem;
+}
+.f34{
+	font-size: 1.7rem;
+}
+.f30{
+	font-size: 1.5rem;
+}
+.f38{
+	font-size: 1.9rem;
+}
+.mt189{
+	margin-top: 7.45rem;
+}
+.mt98{
+	margin-top: 4.9rem;
+}
+.mt192{
+	margin-top: 7.6rem;
+}
+.mt120{
+	margin-top: 6rem;
+}
+.mt279{
+	margin-top: 9.95rem;
+}
+.mt39{
+	margin-top: 1.95rem;
+}
+.mt5{
+	margin-top: 0.8rem;
+}
+.ml2{
+	margin-left: 2rem;
+}
+.mr2{
+	margin-right: 2rem;
+}
+.mt1{
+	margin-top: 1rem;
+}
+.w168{
+	width: 8.4rem;
+}
+.w207{
+	width: 11.35rem;
+}
+.h33{
+	height: 1.65rem;
+}
+.h28{
+	height: 1.4rem;
+}
+.w160{
+	width: 8rem;
+}
+.h80{
+	height: 4rem;
+}
+.h50{
+	height: 2.5rem;
+}
+
+.w600{
+	width: 30rem;
+	
+}
+.bot{
+	border-bottom: 0.05rem solid #B9B9B9;
+}
+
+.bt{
+  border-radius: 1.25rem;
+  background-color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  color: #ffffff;
+  font-size: 0.18rem;
+  box-shadow: none;
+  border:none;
+  cursor: pointer;
+  padding-left: 0.12rem;
+  padding-right: 0.12rem;
+  line-height: 1.4
+}
+.bt1{
+  border-radius: 2rem;
+  background-color: #313131;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  color: #ffffff;
+  font-size: 1.9rem;
+  box-shadow: none;
+  border:none;
+  cursor: pointer;
+  padding-left: 0.12rem;
+  padding-right: 0.12rem;
+  line-height: 1.4
+
+}
+.c8{
+	color: #F8D1B8;
+}
+.bd{
+	border: 0.12rem solid #F8D1B8;
+}
+.re{
+	position: relative;
+}
+.ab{
+	position: absolute;
+}
+.bn{
+	border: none;
+}
+.tc{
+	text-align: center;
+}
+.left24{
+	left: 24rem;
+}
+.top24: {
+	top: 24rem;
+}
+.top1{
+	top: -1rem;
+}
+.bgc{
+	background-color: #fff;
+}
+.icon{
+	width: 3.5rem;
+	height: 3.5rem;
+}
+.int{
+	border-bottom: 1px solid #B9B9B9;
+    padding-bottom: 0.5rem;
+    height: 3rem
+}
+.out{
+	    outline: none;
+}
+#btn{
+  border: 0.05rem solid #F8D1B8;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  color: #F8D1B8;
+}
+/*游戏规则*/
+#gameRules{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../img/rule.png') center no-repeat;
+  background-size: 100% 100%;
+  }
+#gameRules_text{
+  overflow: auto;
+  width: 85%;
+  height: 55%;
+  position: absolute;
+  left: 7.5%;
+  top: 37%;
+  font-size: 1.5rem;
+ color:rgba(255,255,255,1);
+
+}
+
+
+ 
